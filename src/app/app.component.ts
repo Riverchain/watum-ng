@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'watum-ng-v001';
+  title = 'watum-ng-v002';
 }

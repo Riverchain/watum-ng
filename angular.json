@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "watum-ng-v001": {
+    "watum-ng-v002": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/watum-ng-v001",
+            "outputPath": "dist/watum-ng-v002",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,7 +24,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -64,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "watum-ng-v001:build"
+            "browserTarget": "watum-ng-v002:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "watum-ng-v001:build:production"
+              "browserTarget": "watum-ng-v002:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "watum-ng-v001:build"
+            "browserTarget": "watum-ng-v002:build"
           }
         },
         "test": {
@@ -112,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "watum-ng-v001:serve"
+            "devServerTarget": "watum-ng-v002:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "watum-ng-v001:serve:production"
+              "devServerTarget": "watum-ng-v002:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "watum-ng-v001"
+  "defaultProject": "watum-ng-v002"
 }
